@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shed</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<img>
+
+<header>
+  <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <nav class="navbar navbar-expand-md navbar-dark d-flex justify-content-end d-md-flex">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="nav-links d-flex">
+        <a href="#home" class="nav-item nav-link">Home</a>
+        <a href="#about" class="nav-item nav-link">About Us</a>
+        <a href="#classes" class="nav-item nav-link">Classes</a>
+        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+        <a href="#contact" class="nav-item nav-link">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<img class="hero" img src="assets/images/shed.jpeg">
+
+
+<main>
+  <section id="about">
+    <h2 class="text-center">About Our Gym</h2>
+    <p>At The Shed, we offer group personal training on site and online. Each of our workouts are researched, thought
+      out and created with the client’s goals and bodies in mind. We believe in building a base and strong body,
+      gradually. We provide monthly programs or new workouts each session, depending on each client’s interest.</p>
+  </section>
+
+
+
+<div id="classesCarousel" class="carousel slide" data-ride="carousel">
+  <a class="carousel-control-prev" href="#classesCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#classesCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <ol class="carousel-indicators">
+    <li data-target="#classesCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#classesCarousel" data-slide-to="1"></li>
+    <li data-target="#classesCarousel" data-slide-to="2"></li>
+    <li data-target="#classesCarousel" data-slide-to="3"></li>
+    <li data-target="#classesCarousel" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card">
+        <img src="assets/images/yoga.jpg" alt="Image 1" class="card-img-top">
+        <div class="carousel-caption">
+          <h3>Class 1</h3>
+          <p>Description of Class 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="assets/images/pilates.jpg" alt="Image 2" class="card-img-top">
+          <div class="carousel-caption d-md-block">
+            <h3>Class 2</h3>
+            <p>Description of Class 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="assets/images/crossfit.jpg" alt="Image 3" class="card-img-top">
+          <div class="carousel-caption d-md-block">
+            <h3>Class 3</h3>
+            <p>Description of Class 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="assets/images/spin.jpg" alt="Image 4" class="card-img-top">
+          <div class="carousel-caption d-md-block">
+            <h3>Class 4</h3>
+            <p>Description of Class 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="assets/images/strength.jpg" alt="Image 5" class="card-img-top">
+          <div class="carousel-caption d-md-block">
+            <h3>Class 5</h3>
+            <p>Description of Class 5</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  </section>
+  <section id="pricing">
+    <h2 class="text-center">Membership Pricing</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Membership Type</th>
+          <th>Monthly Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>$75</td>
+        </tr>
+        <tr>
+          <td>VIP</td>
+          <td>$100</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="contact">
+    <h2 class="text-center">Contact Us</h2>
+    <form action="" class="form-group">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" class="form-control"></textarea>
+      </div>
+      <input type="submit" value="Submit" class="btn btn-primary mt-3">
+    </form>
+  </section>
+</main>
+<footer>
+  <p class="text-center">2023 The Shed <br> Built by Kyle Parks</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
