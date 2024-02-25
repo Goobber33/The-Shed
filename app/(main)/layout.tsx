@@ -1,5 +1,3 @@
-import "@/app/globals.css";
-
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main

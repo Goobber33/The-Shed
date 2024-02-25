@@ -1,9 +1,8 @@
 # 💪 The Shed Gym Website 💻
 
-This project is a web application for The Shed, a local gym in Sandpoint, Idaho owned by Jen Barden. It offers information about the gym, services provided, contact details, and much more! 
+This project is a web application for The Shed, a local gym in Sandpoint, Idaho owned by Jen Barden. It offers information about the gym, services provided, contact details, and much more!
 
 <img src="./public/shed logo.png" alt="The Shed Logo" width="200" height="170"/>
-
 
 ## 🏋️‍♀️ About The Shed Gym
 
@@ -51,10 +50,10 @@ The app should now be running on [http://localhost:3000](http://localhost:3000).
 
 ## 🛠 Built With
 
-* [React](https://reactjs.org/)
-* [React Router](https://reactrouter.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [React-Bootstrap](https://react-bootstrap.github.io/)
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [React-Bootstrap](https://react-bootstrap.github.io/)
 
 ## 🙏 Acknowledgments
 

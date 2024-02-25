@@ -13,24 +13,16 @@ import {
 } from "@nextui-org/react";
 
 export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const menuItems = ["HOME", "TRAINERS", "PROGRAMS", "CONTACT"];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const section = document.querySelector(`#${sectionId}`);
     if (section) {
-      const offset = -800; // Adjust as needed
-      const sectionTop = section.getBoundingClientRect().top + window.scrollY + offset;
+      const offset = -800;
+      const sectionTop =
+        section.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({ top: sectionTop, behavior: "smooth" });
     }
   };
@@ -38,14 +30,17 @@ export default function App() {
   return (
     <Navbar
       position="sticky"
-      className={`py-2 sm:py-4 md:py-12 text-white font-sans w-full ${isScrolled ? "bg-opacity-90 backdrop-blur-lg" : ""}`}
+      className={`py-2 sm:py-4 md:py-12 text-white font-sans w-full`}
       onMenuOpenChange={setIsMenuOpen}
-      style={{ top: 0, zIndex: 1000 }}
+     
     >
-      {/* Adjusted for center alignment */}
-      <div className="flex items-center justify-center w-full">
+      <div className="flex items-center justify-start max-w-4xl space-x-44">
         <NavbarBrand className="shrink-0">
-          <img src="/shed logo.png" className="h-12 sm:h-20 md:h-22 lg:h-32" alt="Logo" />
+          <img
+            src="/shed logo.png"
+            className="h-12 sm:h-20 md:h-22 lg:h-32"
+            alt="Logo"
+          />
         </NavbarBrand>
         <NavbarContent className="flex gap-4 justify-center hidden sm:flex">
           {menuItems.map((item, index) => (
@@ -53,6 +48,9 @@ export default function App() {
               <Button
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-white"
+                color={
+                  index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "default"
+                }
               >
                 {item}
               </Button>
@@ -63,9 +61,9 @@ export default function App() {
 
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="sm:hidden absolute right-4 top-3"
+        className="sm:hidden"
       />
-      <NavbarMenu className="py-6">
+      <NavbarMenu className="py-6 bg-black">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={index} className="gradient-underline">
             <Button

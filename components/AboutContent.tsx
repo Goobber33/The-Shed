@@ -17,11 +17,7 @@ export function CarouselPlugin() {
     Autoplay({ delay: 3500, stopOnInteraction: true }),
   );
 
-  const imageSources = [
-    "group.png",
-    "group1.png",
-    "group2.png",
-  ];
+  const imageSources = ["group.png", "group1.png", "group2.png"];
 
   return (
     <Carousel
@@ -48,4 +44,3 @@ export function CarouselPlugin() {
     </Carousel>
   );
 }
-
