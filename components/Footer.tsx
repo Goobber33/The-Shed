@@ -5,7 +5,7 @@ import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   return (
     <>
-      <footer className="w-full text-white py-6 flex justify-center items-center">
+      <footer className="w-full text-white py-6 flex justify-center items-center hover:scale-100">
         <div className="flex space-x-4">
           {/* Instagram Icon */}
           <a
@@ -26,7 +26,7 @@ export default function Footer() {
           >
             <FontAwesomeIcon
               icon={faFacebookF}
-              className="text-blue-600 hover:text-white w-12 h-12"
+              className="text-blue-600 hover:text-white w-12 h-12 hover:scale-100"
             />
           </a>
         </div>
