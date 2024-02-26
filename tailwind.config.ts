@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const { nextui } = require("@nextui-org/react");
 
@@ -21,7 +21,6 @@ const config: Config = {
       },
     },
     extend: {
-      
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,7 +56,7 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
         fontFamily: {
-          sans: 'Oswald, sans-serif',
+          sans: "Oswald, sans-serif",
         },
       },
       borderRadius: {
@@ -82,6 +81,6 @@ const config: Config = {
     },
   },
   plugins: [require("tailwindcss-animate"), nextui],
-}
+};
 
 export default config;

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -15,32 +15,31 @@ import {
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["HOME", "TRAINERS", "PROGRAMS", "CONTACT"];
+  const menuItems = ["HOME", "ABOUT", "TRAINERS", "PROGRAMS", "CONTACT"];
 
   const scrollToSection = (sectionId: string) => {
-    const section = document.querySelector(`#${sectionId}`);
-    if (section) {
-      const offset = -800;
-      const sectionTop =
-        section.getBoundingClientRect().top + window.scrollY + offset;
-      window.scrollTo({ top: sectionTop, behavior: "smooth" });
+    if (sectionId === "home") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      const section = document.querySelector(`#${sectionId}`);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
 
   return (
     <Navbar
       position="sticky"
-      className={`py-2 sm:py-4 md:py-12 text-white font-sans w-full`}
+      className={`py-2 sm:py-4 md:py-8 text-white font-sans w-full`}
       onMenuOpenChange={setIsMenuOpen}
-     
     >
-      <div className="flex items-center justify-start max-w-4xl space-x-44">
+      <div className="flex items-center justify-start max-w-4xl space-x-40">
         <NavbarBrand className="shrink-0">
-          <img
-            src="/shed logo.png"
-            className="h-12 sm:h-20 md:h-22 lg:h-32"
-            alt="Logo"
-          />
+          <img src="/shed logo.png" className="h-12 sm:h-20 md:h-22 lg:h-32" />
         </NavbarBrand>
         <NavbarContent className="flex gap-4 justify-center hidden sm:flex">
           {menuItems.map((item, index) => (
@@ -49,7 +48,11 @@ export default function App() {
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-white"
                 color={
-                  index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "default"
+                  index === 2
+                    ? "primary"
+                    : index === menuItems.length - 1
+                      ? "danger"
+                      : "default"
                 }
               >
                 {item}

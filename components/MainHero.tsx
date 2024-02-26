@@ -6,13 +6,11 @@ export default function MainHero() {
       <div className="flex flex-wrap justify-center items-center text-white mt-2 mb-12">
         <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-4 py-16 gap-12">
           <div className="mb-8 md:mb-0 md:mr-8">
-            <h1 className="text-6xl font-extrabold mb-8 md:mb-12 font-sans">
-              WELCOME TO{" "}
-              <span className="text-yellow-300">
-                <br />
-                THE
-              </span>{" "}
-              <span className="text-green-500">SHED</span>
+            <h1 className="text-5xl md:text-6xl lg:text-8xl font-extrabold mb-8 md:mb-12 font-sans">
+              WELCOME&nbsp;TO
+              <br />
+              <span className="text-yellow-300">THE</span>
+              <span className="text-green-500">&nbsp;SHED</span>
             </h1>
             <p className="text-sm md:text-md lg:text-2xl font-sans">
               At The Shed, we offer group personal training and personal
@@ -26,11 +24,10 @@ export default function MainHero() {
             </p>
           </div>
           <div className="md:flex-shrink-0 mt-8 md:mt-0">
-            {" "}
             <img
               src="/employee.png"
               alt="Employee"
-              className="rounded-lg shadow-lg h-auto md:h-[24rem] lg:h-[38rem] w-full md:w-auto lg:ml-24"
+              className="object-contain rounded-2xl shadow-lg h-auto md:h-[24rem] lg:h-[38rem] w-full md:w-auto lg:ml-24"
             />
           </div>
         </div>
