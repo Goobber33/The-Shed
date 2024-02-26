@@ -22,6 +22,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        contactButton: "hsl(var(--contact-button))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -6,6 +6,7 @@ import { CarouselPlugin } from "@/components/AboutContent";
 import Trainers from "@/components/Trainers";
 import Programs from "@/components/Programs";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
       <CarouselPlugin />
       <Trainers />
       <Programs />
+      <Contact />
       <Footer />
     </div>
   );
