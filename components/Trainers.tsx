@@ -5,13 +5,18 @@ import TrainerImageChris from "../public/chris.jpeg"; // Adjust path as necessar
 
 export default function Trainers() {
   return (
-    <div id="trainers" className="text-white min-h-[240vh] w-full font-oswald flex flex-col items-center justify-center py-20">
+    <div
+      id="trainers"
+      className="text-white min-h-[240vh] w-full font-oswald flex flex-col items-center justify-center py-20"
+    >
       <div className="container flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold mb-20 text-center">
           OUR <span className="text-[#dde04b]">TRAINERS</span>
         </h1>
         {/* Jen Section */}
-        <div className="flex flex-wrap items-center justify-center w-full md:flex-row mb-44"> {/* Increased bottom margin here */}
+        <div className="flex flex-wrap items-center justify-center w-full md:flex-row mb-44">
+          {" "}
+          {/* Increased bottom margin here */}
           <div className="md:w-1/2 flex justify-center py-5">
             <Image
               src={TrainerImageJen}
@@ -26,12 +31,12 @@ export default function Trainers() {
               Jen
             </h1>
             <p className="text-lg lg:text-xl font-normal max-w-96% text-start">
-            "After working 20 plus years in the fitness and health industry and
-              being a competitive runner, triathlete, and tennis player, I knew
-              the benefits of strength training. By adding cross training to my
-              workouts, I was less prone to injury, stronger overall and more
-              successful racing. In 2012, I decided to share my knowledge and
-              experience and opened The Shed, in Sandpoint, Idaho. It was my
+              "After working 20 plus years in the fitness and health industry
+              and being a competitive runner, triathlete, and tennis player, I
+              knew the benefits of strength training. By adding cross training
+              to my workouts, I was less prone to injury, stronger overall and
+              more successful racing. In 2012, I decided to share my knowledge
+              and experience and opened The Shed, in Sandpoint, Idaho. It was my
               goal to create an affordable gym for people of all ages, where
               they could improve their fitness level, receive personal training,
               workouts designed for their bodies and goals, and be encouraged
@@ -59,8 +64,8 @@ export default function Trainers() {
             <h1 className="text-2xl font-bold text-center md:text-left mb-5">
               Chris
             </h1>
-            <p className="text-lg lg:text-xl font-normal max-w-96% text-start">
-            "My journey as a personal trainer began when I had the opportunity
+            <p className="text-lg lg:text-xl font-normal max-w-96% text-start mb-44">
+              "My journey as a personal trainer began when I had the opportunity
               to work under a renowned chiropractor in Florida, Dr. Edward Hunt.
               This invaluable experience allowed me to witness firsthand the
               intersection of fitness and overall well-being. Collaborating

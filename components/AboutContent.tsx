@@ -92,7 +92,7 @@ export function CarouselPlugin() {
               “bucket list”?
             </p>
             <p className="text-md lg:text-xl mt-8 ">Or</p>
-            <p className="text-md lg:text-xl mt-8">
+            <p className="text-md lg:text-xl mt-8 mb-24">
               Are you finding that your body is “breaking down”, your back, knee
               or hip is causing you to slow down or even give up activities you
               love. Our expertise and training background will help you get on
