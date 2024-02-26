@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex space-x-4">
           {/* Instagram Icon */}
           <a
-            href="https://www.instagram.com/yourusername"
+            href="https://www.instagram.com/theshedsandpoint/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -20,7 +20,7 @@ export default function Footer() {
           </a>
           {/* Facebook Icon */}
           <a
-            href="https://www.facebook.com/yourusername"
+            href="https://www.facebook.com/theshedatsandpointidaho"
             target="_blank"
             rel="noopener noreferrer"
           >
