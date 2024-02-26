@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   const [isHovered, setIsHovered] = useState(false);
   const handleContactClick = () => {
-    window.location.href = "mailto:kcparks1234@gmail.com";
+    window.location.href = "mailto:jenattheshed@gmail.com";
   };
 
     const buttonStyle = isHovered
