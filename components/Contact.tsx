@@ -14,8 +14,10 @@ const Contact = () => {
     : {};
 
   return (
-    <div id="contact" className="flex flex-col items-center justify-center mt-80">
-
+    <div
+      id="contact"
+      className="flex flex-col items-center justify-center mt-80"
+    >
       <div className="gap-8 sm:gap-12 md:gap-16 lg:gap-24 p-2 lg:p-2 items-center justify-center">
         <div className="flex flex-col">
           <p className="text-white font-100 text-lg sm:text-2xl md:text-3xl lg:text-2xl text-start lg:max-w-xl w-auto font-sans mb-12">

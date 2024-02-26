@@ -10,7 +10,6 @@ export default function Programs() {
       id="programs"
     >
       <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-4 lg:gap-44">
-        {" "}
         <div className="flex flex-col items-center text-center mb-4 lg:mb-0">
           <div
             className="w-full w-1/2 lg:w-3/4 mb-12 relative"
@@ -19,8 +18,9 @@ export default function Programs() {
             <Image
               src={AdultProgramsImage}
               alt="Adult Programs"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover", objectPosition: "top 10%" }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="rounded-2xl"
             />
           </div>
@@ -43,9 +43,9 @@ export default function Programs() {
             <Image
               src={YouthProgramsImage}
               alt="Youth Programs"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="top 10%"
+              fill
+              style={{ objectFit: "cover", objectPosition: "top 10%" }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="rounded-2xl"
             />
           </div>
