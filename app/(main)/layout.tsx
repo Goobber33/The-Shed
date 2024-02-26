@@ -4,8 +4,8 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       style={{
         backgroundImage: `linear-gradient(
                 to bottom,
-                rgba(20, 20, 20, 1) 2%,
-                rgba(255, 255, 255, 1) 200%
+                rgba(20, 20, 20, 1) 20%,
+                rgba(255, 255, 255, 1) 400%
             )`,
       }}
     >

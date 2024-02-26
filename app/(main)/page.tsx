@@ -3,6 +3,7 @@ import App from "@/components/Navbar";
 
 import "@/app/globals.css";
 import { CarouselPlugin } from "@/components/AboutContent";
+import Trainers from "@/components/Trainers";
 
 export default function Main() {
   return (
@@ -10,6 +11,7 @@ export default function Main() {
       <App />
       <MainHero />
       <CarouselPlugin />
+      <Trainers />
     </div>
   );
 }

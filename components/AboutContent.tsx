@@ -31,53 +31,74 @@ export function CarouselPlugin() {
     setCurrent(api.selectedScrollSnap() + 1);
 
     api.on("select", () => {
-      console.log("current");
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
 
   return (
     <div id="about" className="text-white mt-44 lg:pr-8">
-      <div className="flex flex-wrap justify-center items-center">
-        <div className="w-full max-w-6xl py-16">
-          <Carousel
-            plugins={[plugin.current]}
-            className="w-full max-w-2xl"
-            onMouseLeave={plugin.current.reset}
-            setApi={setApi}
-          >
-            <CarouselContent>
-              {imageSources.map((src: string, index: number) => (
-                <CarouselItem key={index}>
-                  <div className="p-1">
-                    <Card className="border-none overflow-hidden rounded-lg">
-                      <CardContent className="flex items-center justify-center">
-                        {/* Responsive Image Styling */}
-                        <img
-                          src={src}
-                          alt={`Carousel item ${index + 1}`}
-                          className="rounded-2xl md:w-auto md:h-[450px] h-80 w-full h-auto object-cover"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-          <div className="text-center text-lg text-muted-foreground max-w-2xl">
-            {current} of {count}
+      <div className="flex flex-wrap justify-center items-start">
+        <div className="flex flex-col lg:flex-row w-full max-w-6xl py-16">
+          {/* Carousel and its Text Content */}
+          <div className="w-full lg:w-1/2 lg:order-1 order-2">
+            <Carousel
+              plugins={[plugin.current]}
+              className="w-full"
+              onMouseLeave={plugin.current.reset}
+              setApi={setApi}
+            >
+              <CarouselContent>
+                {imageSources.map((src, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-1">
+                      <Card className="border-none overflow-hidden rounded-lg">
+                        <CardContent className="flex items-center justify-center">
+                          <img
+                            src={src}
+                            alt={`Carousel item ${index + 1}`}
+                            className="rounded-2xl md:w-auto md:h-[450px] h-80 w-full object-cover"
+                          />
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+            <div className="text-center text-lg text-muted-foreground">
+              {current} of {count}
+            </div>
+            <p className="text-md md:text-md lg:text-xl font-sans mt-4 lg:ml-8 text-center lg:text-left">
+              The concept and program was created by Jen Barden, Lead Trainer
+              and Owner, from years of working in different fields of health and
+              fitness and also from her own athletic achievements. The Shed in
+              Sandpoint, Idaho cannot be duplicated and the program itself has
+              been tested with proven results.
+            </p>
           </div>
-          <p className="text-sm md:text-md lg:text-xl font-sans mt-4 mx-auto lg:mx-0 w-80 lg:w-auto lg:max-w-2xl text-center">
-            At The Shed, we offer group personal training and personal training
-            on site and online. Each of our workouts are researched, thought out
-            and created with the client’s goals and bodies in mind. We believe
-            in building a base and strong body, gradually. We provide monthly
-            programs or new workouts each session, depending on each client’s
-            interest. We also offer general memberships for gym use only. No
-            sign up fees or commitment beyond a month. All members have 24/7
-            lockbox access to the gym.
-          </p>
+
+          <div className="w-full lg:w-1/2 lg:order-2 order-1 flex flex-col justify-start p-4 lg:p-8 font-sans">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-center lg:text-left">
+              ABOUT <span className="text-yellow-300">THE</span>{" "}
+              <span className="text-green-500">&nbsp;SHED</span>
+            </h1>
+            <p className="text-md lg:text-xl">
+              The Shed is a unique facility where youth and adults gather to
+              workout. The gym is intimate and different than any other in the
+              area and perhaps the nation.
+            </p>
+            <p className="text-md lg:text-xl mt-8">
+              Are you an adult training for a race, event or is that on your
+              “bucket list”?
+            </p>
+            <p className="text-md lg:text-xl mt-8 ">Or</p>
+            <p className="text-md lg:text-xl mt-8">
+              Are you finding that your body is “breaking down”, your back, knee
+              or hip is causing you to slow down or even give up activities you
+              love. Our expertise and training background will help you get on
+              track.
+            </p>
+          </div>
         </div>
       </div>
     </div>
