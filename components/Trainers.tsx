@@ -14,10 +14,10 @@ export default function Trainers() {
           OUR <span className="text-[#dde04b]">TRAINERS</span>
         </h1>
         {/* Jen Section */}
-        <div className="flex flex-wrap items-center justify-center w-full md:flex-row mb-44">
+        <div className="flex flex-wrap items-center justify-center w-full md:flex-row mb-44 md:gap-6">
           {" "}
           {/* Increased bottom margin here */}
-          <div className="md:w-1/2 flex justify-center py-5">
+          <div className="md:w-5/12 flex justify-center py-5">
             <Image
               src={TrainerImageJen}
               alt="Jen"
@@ -64,7 +64,7 @@ export default function Trainers() {
             <h1 className="text-2xl font-bold text-center md:text-left mb-5">
               Chris
             </h1>
-            <p className="text-lg lg:text-xl font-normal max-w-96% text-start mb-44">
+            <p className="text-lg lg:text-xl font-normal max-w-96% text-start lg:mb-44">
               "My journey as a personal trainer began when I had the opportunity
               to work under a renowned chiropractor in Florida, Dr. Edward Hunt.
               This invaluable experience allowed me to witness firsthand the

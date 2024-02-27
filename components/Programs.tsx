@@ -9,6 +9,9 @@ export default function Programs() {
       className="text-white min-h-screen w-full font-oswald flex flex-col items-center justify-center px-4"
       id="programs"
     >
+      <h1 className="text-4xl font-bold mb-20 text-center">
+        OUR <span className="text-green-500">PROGRAMS</span>
+      </h1>
       <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-4 lg:gap-44">
         <div className="flex flex-col items-center text-center mb-4 lg:mb-0">
           <div
