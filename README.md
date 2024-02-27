@@ -51,9 +51,9 @@ The app should now be running on [http://localhost:3000](http://localhost:3000).
 ## 🛠 Built With
 
 - [React](https://reactjs.org/)
-- [React Router](https://reactrouter.com/)
-- [Bootstrap](https://getbootstrap.com/)
-- [React-Bootstrap](https://react-bootstrap.github.io/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Shadcn UI](https://shadcn.com/)
 
 ## 🙏 Acknowledgments
 
