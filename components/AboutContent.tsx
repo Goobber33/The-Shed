@@ -40,7 +40,7 @@ export function CarouselPlugin() {
       <div className="flex flex-wrap justify-center items-start">
         <div className="flex flex-col lg:flex-row w-full max-w-6xl py-16">
           {/* Carousel and its Text Content */}
-          <div className="w-full lg:w-1/2 lg:order-1 order-2">
+          <div className="w-full lg:w-7/12 lg:order-1 order-2">
             <Carousel
               plugins={[plugin.current]}
               className="w-full"

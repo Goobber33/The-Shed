@@ -16,12 +16,14 @@ const config: Config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        xs: "375px",
-        "2xl": "1400px",
-      },
     },
     extend: {
+      extend: {
+        screens: {
+          xs: "375px",
+          "2xl": "1600px",
+        },
+      },
       colors: {
         contactButton: "hsl(var(--contact-button))",
         border: "hsl(var(--border))",

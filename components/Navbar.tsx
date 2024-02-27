@@ -28,7 +28,7 @@ export default function App() {
         section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
-    // Close the navbar menu when a link is clicked
+
     setIsMenuOpen(false);
   };
 

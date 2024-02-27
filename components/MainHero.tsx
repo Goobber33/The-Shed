@@ -27,7 +27,7 @@ export default function MainHero() {
             <img
               src="/employee.png"
               alt="Employee"
-              className="object-contain rounded-2xl shadow-lg h-auto md:h-[24rem] lg:h-[38rem] w-full md:w-auto lg:ml-24"
+              className="object-contain rounded-2xl shadow-lg h-auto md:h-[24rem] lg:h-[38rem] w-full md:w-auto lg:ml-2 2xl:ml-24"
             />
           </div>
         </div>

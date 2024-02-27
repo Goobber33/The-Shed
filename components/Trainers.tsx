@@ -26,7 +26,7 @@ export default function Trainers() {
               height={600}
             />
           </div>
-          <div className="md:w-1/2 py-5 flex flex-col items-center md:items-start">
+          <div className="md:w-7/12 lg:w-1/2 py-5 flex flex-col items-center md:items-start">
             <h1 className="text-2xl font-bold text-center md:text-left mb-5">
               Jen
             </h1>
@@ -51,7 +51,7 @@ export default function Trainers() {
         </div>
         {/* Chris Section */}
         <div className="flex flex-wrap items-center justify-center w-full md:flex-row-reverse">
-          <div className="md:w-1/2 flex justify-center py-5">
+          <div className="md:w-7/12 lg:w-1/2 2xl:w-1/2 flex justify-center py-5">
             <Image
               src={TrainerImageChris}
               alt="Chris"
