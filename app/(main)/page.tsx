@@ -1,5 +1,6 @@
 import MainHero from "@/components/MainHero";
 import App from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/react"
 
 import "@/app/globals.css";
 import { CarouselPlugin } from "@/components/AboutContent";
@@ -18,6 +19,7 @@ export default function Main() {
       <Programs />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }
