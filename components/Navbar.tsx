@@ -17,16 +17,40 @@ export default function App() {
   const menuItems = ["HOME", "ABOUT", "TRAINERS", "PROGRAMS", "CONTACT"];
 
   const scrollToSection = (sectionId: string) => {
-    if (sectionId === "home") {
+    const isDesktop = window.innerWidth >= 768;
+    let offset = 0;
+
+    if (isDesktop) {
+      switch (sectionId) {
+        case "trainers":
+          offset = -220;
+          break;
+        case "programs":
+          offset = 150;
+          break;
+        default:
+          offset = 100;
+          break;
+      }
+    } else {
+      switch (sectionId) {
+        case "programs":
+          offset = 100;
+          break;
+        default:
+          offset = 0;
+          break;
+      }
+    }
+
+    const section = document.querySelector(`#${sectionId}`);
+    if (section) {
+      const sectionTop =
+        section.getBoundingClientRect().top + window.pageYOffset - offset;
       window.scrollTo({
-        top: 0,
+        top: sectionTop,
         behavior: "smooth",
       });
-    } else {
-      const section = document.querySelector(`#${sectionId}`);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
     }
 
     setIsMenuOpen(false);
