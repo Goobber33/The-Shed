@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import TrainerImageJen from "../public/jen.jpeg"; // Adjust path as necessary
+import TrainerImageJen from "../public/jen.webp"; // Adjust path as necessary
 import TrainerImageChris from "../public/chris.jpeg"; // Adjust path as necessary
 
 export default function Trainers() {
@@ -16,7 +16,6 @@ export default function Trainers() {
         {/* Jen Section */}
         <div className="flex flex-wrap items-center justify-center w-full md:flex-row mb-44 md:gap-6">
           {" "}
-          {/* Increased bottom margin here */}
           <div className="md:w-5/12 flex justify-center py-5">
             <Image
               src={TrainerImageJen}
