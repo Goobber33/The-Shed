@@ -17,12 +17,6 @@ export default function Hours() {
             <span className="block">Thursday 7am - 12pm</span>
             <span className="block">Friday 7am - 12pm</span>
           </p>
-          <p className="text-xl max-w-xl mb-24 text-center sm:text-left">
-            {" "}
-            {/* Centered on mobile */}
-            All memberships include 24/7 lockbox access to the gym. Family
-            discounts available. There is no contract or sign-up fee.
-          </p>
         </div>
       </div>
     </div>
