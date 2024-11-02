@@ -14,7 +14,7 @@ import {
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = ["HOME", "ABOUT", "TRAINERS", "PROGRAMS", "CONTACT"];
+  const menuItems = ["HOME", "ABOUT", "TRAINERS", "PROGRAMS", "RATES", "HOURS", "CONTACT"];
 
   const scrollToSection = (sectionId: string) => {
     const isDesktop = window.innerWidth >= 768;
@@ -23,13 +23,20 @@ export default function App() {
     if (isDesktop) {
       switch (sectionId) {
         case "trainers":
-          offset = -220;
+          offset = -85;
           break;
         case "programs":
           offset = 150;
           break;
         default:
           offset = 100;
+          break;
+          case "rates":
+          offset = 0;
+          break;
+  
+          case "hours":
+          offset = 270;
           break;
       }
     } else {

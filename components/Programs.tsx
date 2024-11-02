@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AdultProgramsImage from "../public/adult.jpeg";
-import YouthProgramsImage from "../public/youth.png";
+import AdultPProgramsImage from "../public/adultp.jpeg";
 
 export default function Programs() {
   return (
@@ -19,7 +19,7 @@ export default function Programs() {
             style={{ height: "0px", paddingBottom: "76.25%" }}
           >
             <Image
-              src={AdultProgramsImage}
+              src={AdultPProgramsImage}
               alt="Adult Programs"
               fill
               style={{ objectFit: "cover", objectPosition: "top 10%" }}
@@ -44,7 +44,7 @@ export default function Programs() {
             style={{ height: "0px", paddingBottom: "76.25%" }}
           >
             <Image
-              src={YouthProgramsImage}
+              src={AdultProgramsImage}
               alt="Youth Programs"
               fill
               style={{ objectFit: "cover", objectPosition: "top 10%" }}
@@ -52,14 +52,14 @@ export default function Programs() {
               className="rounded-2xl"
             />
           </div>
-          <h1 className="text-4xl font-bold mb-8">Youth Programs</h1>
+          <h1 className="text-4xl font-bold mb-8">Online Training</h1>
           <p className="text-xl max-w-xl mb-12 lg:text-center">
-            We train all athletes from ages 10 to college level and beyond. We
-            design dynamic, functional workouts that prevent injury, identify
-            and nullify “power leaks” and prepare the athletes for their sports.
-            Workouts will include plyometrics, core and stability training, gait
-            analysis, speed training, and lifting. Building complete athletes at
-            The Shed is our primary goal.{" "}
+            I offer online fitness training, and it's affordable! I am working
+            with people as far away as NY and as close as Upper Pack River and
+            Spokane! If you need support, a plan, guidance, I am here for you.
+            Workouts are written based on your goals, body, and available
+            equipment. Together, we can make it work and take the stress out of
+            finding the time to go to the gym!{" "}
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function MainHero() {
           </div>
           <div className="md:flex-shrink-0 mt-8 md:mt-0">
             <img
-              src="/employee.png"
+              src="/jenmain.jpg"
               alt="Employee"
               className="object-contain rounded-2xl shadow-lg h-auto md:h-[24rem] lg:h-[38rem] w-full md:w-auto lg:ml-2 2xl:ml-24"
             />
